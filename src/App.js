@@ -5,6 +5,7 @@ import Home from './components/Home'
 import NoPage from './components/NoPage';
 import Login from './components/Login';
 import Sell from './components/Sell';
+import Signup from './components/Signup';
 
 function App() {
   return (
@@ -16,8 +17,10 @@ function App() {
           
           <Route path='log_in' element={<Login/>}/>
           <Route path='Sell' element={<Sell/>}/>
+          
           </Route>
           <Route path="*" element={<NoPage />} />
+          <Route path='sign_up' element={<Signup/>}/>
         </Routes>
       </BrowserRouter>
     </div>
