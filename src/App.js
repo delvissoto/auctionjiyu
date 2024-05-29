@@ -13,11 +13,11 @@ function App() {
         <Routes>
           <Route path='/' element={<Navbar/>}>
           <Route index element={<Home/>} />
-          <Route path="*" element={<NoPage />} />
+          
           <Route path='log_in' element={<Login/>}/>
           <Route path='Sell' element={<Sell/>}/>
           </Route>
-          
+          <Route path="*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>
     </div>
