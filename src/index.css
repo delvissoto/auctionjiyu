@@ -54,7 +54,7 @@ a:hover{
 
 .nopage{
     width: 100%;
-    background-color:  rgb(8, 19, 11);;
+    background-color:  rgb(8, 19, 11);
     height: 100vh;
     top: 0;
     left: 0;
@@ -85,3 +85,46 @@ a:hover{
     font-size: 40px;
   }
   
+  /* LOG IN/ SIGN UP */
+.credentialform{
+    width: 100%;
+    height: 100vh;
+    background-color:  rgb(8, 19, 11);
+    display: flex;
+    text-align: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+.credentialform>form{
+    width: 100%;
+    color: aliceblue;
+}
+.credentialform>form>h2{
+    color: orange;
+}
+.credentialform>form>input{
+    margin-bottom: 10px;
+    width: 270px;
+}
+.credentialform>form>button{
+    width: 270px;
+    height: 30px;
+}
+.credentialbox{
+    background-color: aliceblue;
+    width: 30%;
+    align-self: center;
+    color: black;
+    margin-left:35% ;
+    margin-left:35% ;
+    border-radius:3%;
+    border: 5px orange solid;
+}
+.tac{
+    font-size: 12px;
+}
+.credentialquestion{
+    color: blue;
+
+}

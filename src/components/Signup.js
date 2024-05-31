@@ -17,18 +17,19 @@ const Signup = () => {
   const [zipcode, setZipcode] = useState('')
 
   const handleSumbit = (e) =>{
-    e.preventdefault()
+    e.preventDefault()
   }
 
   
 
 
   return (
-    <>
+    <div className='credentialform'>
 
     <form onSubmit={handleSumbit}>
       <Link to="/"><img id='logonopage' src={logo} alt='Logo'/></Link>
       <h2>Register</h2>
+      <section className='credentialbox'>
       <label>Email:</label><br/>
       <input type='email' value={email} name='email' onChange={ (e) =>{ setEmail(e.target.value)}}/> <br/>
 
@@ -54,15 +55,18 @@ const Signup = () => {
       <input type='number' value={zipcode} name='zipcode' onChange={ (e) =>{ setZipcode(e.target.value)}}/> <br/>
 
       <label>Date of Birth:</label><br/>
-      <input type='date' value={dob} name='dob' onChange={ (e) =>{ setDob(e.target.value)}}/> <br/>
+      <input type='date' value={dob} name='dob' onChange={ (e) =>{ setDob(e.target.value)}}/> <br/><br/>
 
-      <input type='checkbox' value={tac} onChange={ (e) =>{ setTac(e.target.value)}}/> <br/>
-
-
-      <button type='Submnit'>Register</button>
+      <input type='checkbox' value={tac} onChange={ (e) =>{ setTac(e.target.value)}}/> 
+      <span className='tac'>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time.</span><br/>
+      <br/>
+      <button type='Submnit'>Register</button><br/>
+      <p>Have a account? <Link className='credentialquestion' to='/log_in'>Log in </Link></p>
+      </section>
+    
 
     </form>
-    </>
+    </div>
   )
 }
 

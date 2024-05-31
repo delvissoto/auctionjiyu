@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className='navbar'>
     <Link to="/"><img id='logo' src={logo} alt='Logo'/></Link>
         <ul className='navsec1'>
-            <li className='navLinks'><Link to='/'>Auction</Link></li>
+            <li className='navLinks'><Link to='/auction'>Auction</Link></li>
             <li className='navLinks'><Link to='/sell'>Sell</Link></li>
             {/* <li className='navLinks'><Link to='/shipping'>Shipping</Link></li> */}
             <li className='navLinks'><Link to='/about'>About</Link></li>
