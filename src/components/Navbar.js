@@ -17,7 +17,7 @@ const Navbar = () => {
             
         </ul>
         <ul  className='navsec2'>
-        <li className='navLinks'><Link to='/log_in'>LogIn</Link> / <Link to='/sign_up'>SignUp</Link></li>
+        <li className='navLinks'><Link to='/log_in'>Login</Link> / <Link to='/sign_up'>Signup</Link></li>
         <input type='search' placeholder='Search'/>
         </ul>
     </nav>

@@ -2,50 +2,59 @@ import React from 'react'
 
 const Sell = () => {
   return (
-    <>
+    <div className='sellpage'>
+    
+    <section className='Sellingsection'>
     <form>
-    <section>
       <h2>Tell us about your item... </h2>
-      <label>Item Name:</label>
-      <input type='text'/><br/>
+      
+      <input className='sellinginput' type='text' placeholder='Item name'/><br/>
 
-      <label>Condition :</label>
-      <input type='text'/><br/>
+      
+      <input className='sellinginput' type='text' placeholder='Condition'/><br/>
 
-      <label>Year :</label>
-      <input type='text'/><br/>
+  
+      <input className='sellinginput' type='text' placeholder='Year'/><br/>
 
-      <label> Operational Status :</label>
-      <input type='text'/><br/>
+     
+      <input className='sellinginput' type='text' placeholder='Operation Status'/><br/>
 
-      <label>Description :</label>
-      <input type='text'/><br/>
+     
+      <input className='sellinginput' type='text' placeholder='Description'/><br/>
 
-      <label>Features:</label>
-      <input type='text'/><br/>
+      
+      <input className='sellinginput' type='text' placeholder='Features'/><br/>
 
-      <label>Legal Owner:</label>
-      <input type='text'/><br/>
+      
+      <input className='sellinginput' type='text' placeholder='Owner'/><br/>
 
-      <label>Title Asset? :</label>
-      <input type='text'/><br/>
+      
+      <input className='sellinginput' type='text' placeholder='Title Asset?'/><br/>
       {/* if title ask for Vin # */}
 
-      <label>Location :</label>
-      <input type='text'/><br/>
+      
+      <input className='sellinginput'type='text' placeholder='Location'/><br/>
       {/* use google maps for location */}
 
-      <label>Contact Info:</label>
-      <input type='text'/><br/>
+      
+      <input className='sellinginput' type='text' placeholder='Contact phone #'/><br/>
 
-      <label>Visiting Hours:</label>
-      <input type='text'/><br/>
+     
+      <input className='sellinginput' type='text' placeholder='Visisting '/><br/>
+
+      <input className='sellinginput' type='file'/>
+      <input className='sellinginput' type='file'/>
+      <input className='sellinginput' type='file'/>'<input className='sellinginput' type='file'/>'
+
+      <p className='tac'><input type='checkbox'/>I read and accept the terms and contions. </p>
+      <input className='sellinginput'  type='submit' />
+      
+       </form>
     </section>
-    <p><input type='checkbox'/>I read and accept the terms and contions. </p>
-
-    <input type='submit' />
-    </form>
-    </>
+  
+    
+    
+    </div>
   )
 }
 
